@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity2">
+
+    <TextView
+        android:id="@+id/EXTRA_personEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="EXTRA_personEmail"
+        android:textSize="16sp" />
+
+    <!--<TextView
+        android:id="@+id/EXTRA_personFamilyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="EXTRA_personFamilyName"
+        android:textSize="10sp"
+        android:layout_below="@id/EXTRA_personEmail"/>
+
+    <TextView
+        android:id="@+id/EXTRA_personGivenName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="EXTRA_personGivenName"
+        android:textSize="10sp"
+        android:layout_below="@id/EXTRA_personFamilyName"/> -->
+
+    <TextView
+        android:id="@+id/EXTRA_personName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="EXTRA_personName"
+        android:textSize="16sp"
+        android:layout_below="@id/EXTRA_personEmail"/>
+        <!--android:layout_below="@id/EXTRA_personGivenName"/> -->
+
+    <EditText
+        android:id="@+id/url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="textUri"
+        android:hint="Url"
+        android:layout_below="@id/EXTRA_personName"/>
+
+    <EditText
+        android:id="@+id/url_short"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="textUri"
+        android:hint="Url Short"
+        android:layout_below="@id/url"/>
+
+    <Button
+        android:id="@+id/btn_shorten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Acortar!"
+        android:layout_below="@id/url_short" />
+
+</RelativeLayout>
